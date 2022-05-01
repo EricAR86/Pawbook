@@ -1,0 +1,27 @@
+<h1>Register your Pet!</h1>
+<form action="/pet/create" method="POST">
+<label>Pet Name: 
+    <input type="text" name="petname" placeholder="chilaquil"/>
+</label>
+<label>Category
+    <select name="breed">
+    <option value="value1">dog</option>
+    <option value="value2">cat</option>
+    <option value="value3">hamster</option>
+</select>
+</label>
+<label>Breed: 
+    <input type="text" name="breed" placeholder="electrico"/>
+</label>
+<label>Age
+<input type="number" name="age"/>
+</label>
+<label>Size
+    <select name="size">
+    <option value="value1">mini</option>
+    <option value="value2">small</option>
+    <option value="value3">large</option>
+</select>
+</label>
+</form>
+<button type="submit">Register!</button>
