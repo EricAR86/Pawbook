@@ -1,0 +1,26 @@
+
+each post
+    <div style="width: 70%;margin:50px 15%;text-align:center; border:2px solid ">
+        <div class="Usuario">
+            <img src={{avatar}}>
+            <p>{{username}}</p>
+        </div>
+        <div class="post">
+            <img src={{image}}>
+            <p>{{description}}</p>
+            <p>👍{{likes}}</p>
+            <p>{{comments}}</p>
+        </div>
+        <div class="LikeComment">
+            <form action="/newlike" method="POST">
+                <button >👍</button>
+            </form>
+            <form action="/newComment" method="POST">
+                <textarea>Comment</textarea>
+                <button type="submit">Enviar</button>
+            </form>        
+        </div>
+    </div>
+/each
+
+
