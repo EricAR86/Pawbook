@@ -30,9 +30,12 @@ app.use("/", index);
 const authRoutes = require("./routes/auth.routes");
 app.use("/auth", authRoutes);
 
+const dashboard = require("./routes/dashboard.routes")
+app.use("/", dashboard)
 
-const postRoutes = require ("./routes/post.routes")
-app.use("/post/new", postRoutes)
+
+const postRoutes = require("./routes/post.routes")
+app.use("/", postRoutes)
 
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes

@@ -1,30 +1,34 @@
-<div>
-   <h2>Signup</h2>
-     <form action="/auth/signup" method="POST">
-        <div class="mb-3">   
-          <label class="form-label" for="username">Username</label>
-          <input type="text" name="username" class="form-control" id="username" required>
-        </div>
-        <div class="mb-3">   
-          <label class="form-label" for="password">password</label>
-          <input 
-            type="password" 
-            name="password" 
-            class="form-control" 
-            id="password" 
-            required 
-            placeholder="********"  
-            minlength="8"
-          >
-          <span id="eye-on"><i class="fa-solid fa-eye" ></i></span>
-          <span  id="eye-off"><i class="fa-solid fa-eye-slash"></i></span>
-        </div>
-        <div class="mb-3">   
-          <label class="form-label" for="email">email</label>
-          <input type="email" name="email" class="form-control" id="email" required>
-        </div>
-       <button type="submit">Signup</button>
+<h2>Signup</h2>
+<div class="d-flex justify-content-center">
+  <form action="/auth/signup" method="POST" style="width: 30%;">
+    <div class="mb-3">   
+      <label class="form-label" for="username">Username</label>
+      <input type="text" name="username" class="form-control" id="username" required>
+    </div>
+    <div class="mb-3">   
+      <label class="form-label" for="password">password</label>
+      <input 
+        type="password" 
+        name="password" 
+        class="form-control" 
+        id="password" 
+        required 
+        placeholder="********"  
+        minlength="8"
+      >
+      <span id="eye-on"><i class="fa-solid fa-eye" ></i></span>
+      <span  id="eye-off"><i class="fa-solid fa-eye-slash"></i></span>
+    </div>
+    <div class="mb-3">   
+      <label class="form-label" for="email">email</label>
+      <input type="email" name="email" class="form-control" id="email" required>
+    </div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="submit" class="btn btn-primary">Registrarse</button>
+    </div>
+  </form>
 </div>
+
 
 
 <!--EXTRA: Mostrar/ocultar password-->
